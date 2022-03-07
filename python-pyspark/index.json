@@ -6,23 +6,23 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "PySpark",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Read",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Write",
         "text": "step3.md"
       },
       {
-        "title": "Step 4",
+        "title": "Transform",
         "text": "step4.md"
       },
       {
-        "title": "Step 5",
+        "title": "Benefits against plain python",
         "text": "step5.md"
       }
     ],
