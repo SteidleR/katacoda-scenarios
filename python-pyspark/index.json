@@ -1,17 +1,21 @@
 {
-  "title": "Spark and PySpark ",
+  "title": "Spark and PySpark [WIP]",
   "description": "Learn how to use PySpark for data processing",
-  "difficulty": "Intermediate",
+  "difficulty": "Easy",
   "time": "10",
   "details": {
     "steps": [
       {
-        "title": "PySpark",
+        "title": "Apache Spark",
         "text": "step1.md"
       },
       {
-        "title": "Read",
+        "title": "PySpark",
         "text": "step2.md"
+      },
+      {
+        "title": "Read",
+        "text": "step3.md"
       },
       {
         "title": "Write",
@@ -22,7 +26,7 @@
         "text": "step4.md"
       },
       {
-        "title": "Benefits against plain python",
+        "title": "PySpark vs plan Python",
         "text": "step5.md"
       }
     ],
