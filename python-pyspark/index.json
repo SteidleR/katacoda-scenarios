@@ -1,8 +1,6 @@
 {
   "title": "Spark and PySpark",
   "description": "Learn how to use PySpark for data processing",
-  "difficulty": "Easy",
-  "time": "10",
   "details": {
     "steps": [
       {
