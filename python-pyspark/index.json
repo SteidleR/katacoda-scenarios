@@ -1,5 +1,5 @@
 {
-  "title": "Spark and PySpark [WIP]",
+  "title": "Spark and PySpark",
   "description": "Learn how to use PySpark for data processing",
   "difficulty": "Easy",
   "time": "10",
@@ -26,7 +26,7 @@
         "text": "step4.md"
       },
       {
-        "title": "PySpark vs plan Python",
+        "title": "PySpark vs Python",
         "text": "step5.md"
       }
     ],
@@ -42,5 +42,10 @@
   },
   "backend": {
     "imageid": "python:3.7"
+  },
+  "assets": {
+    "client": [
+      { "file": "*", "target": "~/" }
+    ]
   }
 }

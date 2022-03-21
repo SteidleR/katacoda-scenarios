@@ -14,4 +14,6 @@ First of all open the script in the file editor
 
 To execute the script and check if pyspark was imported correctly, execute the following command.
 
-`python pyspark-demo.py`{{execute}}
+`python import-pyspark.py`{{execute}}
+
+If there isn't any error, then everything went well and pyspark was installed successfully using pip.
