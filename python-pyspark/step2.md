@@ -14,10 +14,7 @@ First of all copy the script to the file editor. This will import the spark libr
 import pyspark
 from pyspark.sql import Sparksession
 
-spark = SparkSession.builder()
-         .master("local[1]")
-         .appName("SparkByExamples.com")
-         .getOrCreate()
+spark = SparkSession.builder().master("local[1]").appName("SparkByExamples.com").getOrCreate()
 
 print("Version: ", spark.sparkContext.version)
 </pre>

@@ -46,6 +46,6 @@
     "pyspark.py"
   ],
   "backend": {
-    "imageid": "openjdk:15"
+    "imageid": "ubuntu"
   }
 }
