@@ -8,9 +8,11 @@ PySpark is a library for processing data with Spark in Python.
 
 ## Importing PySpark
 
-First of all open the script in the file editor
+First of all copy the script to the file editor
 
-`python-scripts/import-pyspark.py`{{open}}
+<pre class="file" data-filename="pyspark.py" data-target="replace">
+import pyspark
+</pre>
 
 To execute the script and check if pyspark was imported correctly, execute the following command.
 

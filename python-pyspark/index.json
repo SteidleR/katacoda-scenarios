@@ -41,7 +41,7 @@
     "uisettings": "python"
   },
   "files": [
-    "pyspark-demo.py"
+    "pyspark.py"
   ],
   "backend": {
     "imageid": "python:3.7"
