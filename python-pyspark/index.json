@@ -1,6 +1,8 @@
 {
   "title": "Spark and PySpark",
   "description": "Learn how to use PySpark for data processing",
+  "difficulty": "Beginner",
+  "time": "10"
   "details": {
     "steps": [
       {
@@ -44,6 +46,6 @@
     "pyspark.py"
   ],
   "backend": {
-    "imageid": "python:3.7"
+    "imageid": "python:3.8"
   }
 }
