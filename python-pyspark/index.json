@@ -36,9 +36,14 @@
     }
   },
   "environment": {
-    "uilayout": "terminal"
+    "uilayout": "editor-terminal",
+    "uieditorpath": "/root/examples",
+    "uisettings": "python"
   },
+  "files": [
+    "pyspark-demo.py"
+  ],
   "backend": {
-    "imageid": "ubuntu:2004"
+    "imageid": "python:3.7"
   }
 }
