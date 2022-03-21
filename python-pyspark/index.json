@@ -36,9 +36,9 @@
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "python:3.7"
+    "imageid": "python:3.8"
   }
 }
