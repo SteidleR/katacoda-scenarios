@@ -40,10 +40,5 @@
   },
   "backend": {
     "imageid": "python:3.7"
-  },
-  "assets": {
-    "client": [
-      { "file": "*", "target": "~/" }
-    ]
   }
 }
