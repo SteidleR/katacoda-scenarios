@@ -30,7 +30,8 @@
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "code": "background.sh"
     },
     "finish": {
       "text": "finish.md"
@@ -45,6 +46,6 @@
     "pyspark.py"
   ],
   "backend": {
-    "imageid": "python:3.8"
+    "imageid": "openjdk:15"
   }
 }
