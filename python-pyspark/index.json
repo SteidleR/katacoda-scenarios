@@ -43,7 +43,7 @@
     "uisettings": "python"
   },
   "files": [
-    "pyspark.py"
+    "pyspark-demo.py"
   ],
   "backend": {
     "imageid": "ubuntu"
