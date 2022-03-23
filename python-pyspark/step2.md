@@ -12,9 +12,9 @@ First of all copy the script to the file editor. This will import the spark libr
 
 <pre class="file" data-filename="pyspark-demo.py" data-target="replace">
 import pyspark
-from pyspark.sql import Sparksession
+from pyspark.sql import SparkSession
 
-spark = SparkSession.builder().master("local[1]").appName("SparkByExamples.com").getOrCreate()
+spark = SparkSession.builder.master("local[1]").appName("SparkByExamples.com").getOrCreate()
 
 print("Version: ", spark.sparkContext.version)
 </pre>

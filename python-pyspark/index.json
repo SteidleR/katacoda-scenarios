@@ -46,6 +46,6 @@
     "pyspark-demo.py"
   ],
   "backend": {
-    "imageid": "ubuntu"
+    "imageid": "python:3.8"
   }
 }
