@@ -6,21 +6,9 @@ To install the python spark library, execute the following command in the termin
 
 `pip install pyspark`{{execute}}
 
-# Importing PySpark
+# Test installation
+To test the installation, execute the following command in the terminal:
 
-First of all copy the script to the file editor. This will import the spark library and check the version.
+`pyspark`{{execute}}
 
-<pre class="file" data-filename="pyspark-demo.py" data-target="replace">
-import pyspark
-from pyspark.sql import SparkSession
-
-spark = SparkSession.builder.master("local[1]").appName("SparkByExamples.com").getOrCreate()
-
-print("Version: ", spark.sparkContext.version)
-</pre>
-
-To execute the script and check if pyspark was imported correctly, execute the following command.
-
-`python pyspark-demo.py`{{execute}}
-
-If there isn't any error, everything went well and pyspark was installed successfully using pip.
+This will open the PySpark shell in the terminal. If there isn't any error, everything went well and pyspark was installed successfully using pip.

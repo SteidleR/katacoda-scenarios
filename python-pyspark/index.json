@@ -13,15 +13,15 @@
         "text": "step2.md"
       },
       {
-        "title": "Read",
+        "title": "PySpark Usage",
         "text": "step3.md"
       },
       {
-        "title": "Write",
+        "title": "Basic Read and Write",
         "text": "step3.md"
       },
       {
-        "title": "Transform",
+        "title": "Transforming Data",
         "text": "step4.md"
       },
       {
