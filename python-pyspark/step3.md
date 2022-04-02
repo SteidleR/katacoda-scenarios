@@ -2,22 +2,26 @@ Let's have a look at using PySpark within a python program.
 
 ## Importing PySpark
 
-First of all copy the script to the file editor. This will import the spark library and check the version.
-
-A PySpark application starts by initializing a SparkSession from the _pyspark.sql_ library. This _SparkSession_ object is the entry point to all the Spark APIs [3].
+A PySpark application starts by initializing a _SparkSession_ from the _pyspark.sql_ library. This _SparkSession_ object is the entry point to all the Spark APIs [3].
 
 <pre class="file" data-filename="pyspark-demo.py" data-target="replace">
 import pyspark
 from pyspark.sql import SparkSession
 
 spark = SparkSession.builder.getOrCreate()
+</pre>
 
+To get the currently installed version of PySpark, use the _sparkContext.version_ attribute.
+
+<pre class="file" data-filename="pyspark-demo.py" data-target="append">
 print("Version: ", spark.sparkContext.version)
 </pre>
 
-To execute the script, execute the following command.
+Now, execute the script to view the result.
 
 `python pyspark-demo.py`{{execute}}
+
+You should now see the 'Version: _(Some Version number)_' in the terminal.
 
 ---
 

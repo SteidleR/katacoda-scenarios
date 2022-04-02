@@ -8,10 +8,10 @@ Spark can be up to 100x faster than Hadoop on processing large amounts of data. 
 
 ## Using Spark
 
-Apache Spark is written in Scala programming language but provides APIs for different programming languages like Python, Java and R [1].
+Apache Spark is written in Scala programming language but provides APIs for different programming languages like Python, Java and R [1]. This allows administrators and developers to use Spark flexible in the programming languages they use so far in their applications.
 
 ---
-Now that you've learned what Apache Spark is we will take a look at using Python and PySpark for data operations in the following scenarios.
+Now that you've learned in short what Apache Spark is we will take a look at using Python and PySpark for data operations in the following scenarios.
 
 ---
 

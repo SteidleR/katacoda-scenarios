@@ -1,12 +1,13 @@
-PySpark is a library for processing data with Spark in Python.
+PySpark is a library for processing data with Spark in Python. It provides the APIs for using spark functionality within python or in a standalone pyspark command line.
 
 ## Installing the PySpark library
 
-To install the python spark library, execute the following command in the terminal:
+Installing the library is easy because it's distributed with the pip package manager. This means that you can install the PySpark library directly with the following command:
 
 `pip install pyspark`{{execute}}
 
 ## Test installation
+
 To test the installation, execute the following command in the terminal:
 
 `pyspark`{{execute}}

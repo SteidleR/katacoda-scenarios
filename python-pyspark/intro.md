@@ -1,1 +1,1 @@
-In this scenario you will learn how to use PySpark for data processing like reading, writing and transforming data. 
+In this scenario you will learn what Apache Spark is and how to use python library PySpark for data processing like reading, writing and transforming data. 

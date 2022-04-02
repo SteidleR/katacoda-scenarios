@@ -17,16 +17,16 @@
         "text": "step3.md"
       },
       {
-        "title": "Basic Read and Write",
-        "text": "step3.md"
-      },
-      {
-        "title": "Transforming Data",
+        "title": "PySpark and DataFrame",
         "text": "step4.md"
       },
       {
-        "title": "PySpark vs Python",
+        "title": "Transforming Data",
         "text": "step5.md"
+      },
+      {
+        "title": "PySpark vs Python",
+        "text": "step6.md"
       }
     ],
     "intro": {
