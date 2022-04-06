@@ -43,8 +43,14 @@
     "uisettings": "python"
   },
   "files": [
-    "pyspark-demo.py"
+    "step3.py",
+    "step4.py"
   ],
+  "assets": {
+    "client": [
+      {"file": "step3.py", "target": "/root/"}
+    ]
+  },
   "backend": {
     "imageid": "python:3.8"
   }
