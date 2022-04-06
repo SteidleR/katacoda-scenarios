@@ -35,6 +35,11 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        {"file": "step3.py", "target": "/root/"}
+      ]
     }
   },
   "environment": {
@@ -46,11 +51,6 @@
     "step3.py",
     "step4.py"
   ],
-  "assets": {
-    "client": [
-      {"file": "step3.py", "target": "/root/"}
-    ]
-  },
   "backend": {
     "imageid": "python:3.8"
   }
