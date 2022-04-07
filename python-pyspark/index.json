@@ -35,11 +35,6 @@
     },
     "finish": {
       "text": "finish.md"
-    },
-    "assets": {
-      "client": [
-        {"file": "step3.py", "target": "/root/"}
-      ]
     }
   },
   "environment": {

@@ -1,4 +1,6 @@
-Let's start using Spark for simple data processing.
+Let's start using Spark for simple data processing. 
+
+As like in the previous step, we first need to create a new _SparkSession_.
 
 <pre class="file" data-filename="step4.py" data-target="replace">
 import pyspark
@@ -7,7 +9,7 @@ from pyspark.sql import SparkSession, Row
 spark = SparkSession.builder.getOrCreate()
 </pre>
 
-First of all, we create a simple data set and create a DataFrame from it in pyspark.
+We create a simple data set and create a DataFrame from it in pyspark.
 
 <pre class="file" data-filename="step4.py" data-target="append">
 data = (
@@ -24,6 +26,6 @@ data.show()  # print data
 data.printSchema() # print schema
 </pre>
 
-For printing the data from the DataFrame, we can use the function _data.show()_. The function _data.printSchema()_ will show us the schema, which was inferred by PySpark.
+For printing the data from the DataFrame, we can use the function _data.show()_. The function _data.printSchema()_ will print the schema, which was inferred by PySpark.
 
 `python step4.py`{{execute}}
