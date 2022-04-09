@@ -26,6 +26,6 @@ data.show()  # print data
 data.printSchema() # print schema
 </pre>
 
-For printing the data from the DataFrame, we can use the function _data.show()_. The function _data.printSchema()_ will print the schema, which was inferred by PySpark.
+For printing the data stored in the DataFrame, we can use the function _data.show()_. The function _data.printSchema()_ will print the schema, which was inferred by PySpark.
 
 `python step4.py`{{execute}}

@@ -6,6 +6,8 @@ Installing the library is easy because it's distributed with the pip package man
 
 `pip install pyspark`{{execute}}
 
+As you can see, pyspark is already installed.
+
 ## Test installation
 
 To test the installation, execute the following command in the terminal:
@@ -14,4 +16,4 @@ To test the installation, execute the following command in the terminal:
 
 This will open the PySpark shell in the terminal. If there isn't any error, everything went well and pyspark was installed successfully using pip.
 
-Stop the pyspark cli with CTRL+C.
+Stop the pyspark cli with <pre>`^D`{{execute ctrl-seq}}</pre>.

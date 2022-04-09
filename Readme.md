@@ -1,4 +1,6 @@
 # Katacoda Scenarios
+[![](http://shields.katacoda.com/katacoda/steidler/count.svg)](https://www.katacoda.com/steidler "Get your profile on Katacoda.com")
+
 Repository for Katacoda interactive scenarios.
 
 ## [PySpark vs Python](python-pyspark)

@@ -21,7 +21,7 @@
         "text": "step4.md"
       },
       {
-        "title": "Transforming Data",
+        "title": "PySpark with real-world data",
         "text": "step5.md"
       },
       {
@@ -35,6 +35,11 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+       "host01": [
+         {"file": "toy_dataset.csv", "target": "~/"}
+       ] 
     }
   },
   "environment": {
