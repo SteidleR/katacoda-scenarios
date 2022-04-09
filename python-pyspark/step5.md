@@ -10,7 +10,7 @@ spark = SparkSession.builder.getOrCreate()
 The dataset is saved as [toy_dataset.csv](toy_dataset.csv). To load the dataset from file, pyspark provides a function to read csv and return a _DataFrame_ object.
 
 <pre class="file" data-filename="step4.py" data-target="append">
-df  = spark.read.csv("toy_dataset.csv")
+df  = spark.read.csv("toy_dataset.csv", header=True, inferSchema=True)
 
 df.printSchema()
 </pre>
