@@ -23,6 +23,7 @@ show_progress()
     fi
   done
   printf "    \b\b\b\b"
+  echo ""
 }
 
 show_progress
