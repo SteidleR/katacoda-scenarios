@@ -16,3 +16,5 @@ source ~/.bashrc
 
 python3 -m pip install pyspark
 python3 -m pip install pyspark[sql]
+
+echo "done" >> /root/katacoda-finished

@@ -31,14 +31,15 @@
     ],
     "intro": {
       "text": "intro.md",
-      "code": "background.sh"
+      "courseData": "background.sh"
     },
     "finish": {
       "text": "finish.md"
     },
     "assets": {
        "host01": [
-         {"file": "toy_dataset.csv", "target": "~/"}
+         {"file": "toy_dataset.csv", "target": "~/"},
+         {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
        ] 
     }
   },
