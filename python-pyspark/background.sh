@@ -15,5 +15,12 @@ export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
 export PATH=$PATH:$HADOOP_HOME/sbin:$HADOOP_HOME/bin
 export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib/native"
 
+wget https://www.apache.org/dyn/closer.lua/spark/spark-3.2.1/spark-3.2.1-bin-hadoop3.2.tgz
+tar -xvf spark-3.2.1-bin-hadoop3.2.tgz -C /usr/share
+ln -s /usr/share/spark-3.2.1-bin-hadoop3.2/ spark
+echo "SPARK_HOME=/usr/share/spark" >> ~/.bashrc
+echo "PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin" >> ~/.bashrc" >> ~/.bashrc
+source ~/.bashrc
+
 python3 -m pip install pyspark
 python3 -m pip install pyspark[sql]
