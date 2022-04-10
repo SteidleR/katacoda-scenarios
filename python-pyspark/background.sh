@@ -13,7 +13,6 @@ echo "PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin >> ~/.bashrc" >> ~/.bashrc
 source ~/.bashrc
 
 python3 -m pip install pyspark
-python3 -m pip install pyspark[sql]
 
 export HADOOP_HOME=/root/hadoop
 export LD_LIBRARY_PATH=$HADOOP_HOME/lib/native
