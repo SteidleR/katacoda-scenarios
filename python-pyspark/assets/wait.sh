@@ -5,6 +5,7 @@
 
 show_progress()
 {
+  echo "Installing" > /root/katacoda-installation
   local -r pid="${1}"
   local -r delay='1'
   local spinstr='\|/-'
@@ -14,7 +15,7 @@ show_progress()
     if [[ "$?" -ne 0 ]]; then
       text=`cat /root/katacoda-installation`
       temp="${spinstr#?}"
-      printf "%s [%c]  " "${text}" "${spinstr}"
+      printf "%s [%c]               " "${text}" "${spinstr}"
       spinstr=${temp}${spinstr%"${temp}"}
       sleep "${delay}"
       printf "\b\b\b\b\b\b\r" 
