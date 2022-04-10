@@ -10,10 +10,11 @@ show_progress()
   local spinstr='\|/-'
   local temp
   while true; do 
-    sudo grep -i "done" /root/katacoda-finished &> /dev/null
-    if [[ "$?" -ne 0 ]]; then    
+    sudo grep -i "done" /root/katacoda-installation &> /dev/null
+    if [[ "$?" -ne 0 ]]; then
+      text=$('cat /root/katacoda-installation')
       temp="${spinstr#?}"
-      printf " [%c]  " "${spinstr}"
+      printf "%s [%c]  " "${text}" "${spinstr}"
       spinstr=${temp}${spinstr%"${temp}"}
       sleep "${delay}"
       printf "\b\b\b\b\b\b\r" 
