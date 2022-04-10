@@ -12,7 +12,7 @@ show_progress()
   while true; do 
     sudo grep -i "done" /root/katacoda-installation &> /dev/null
     if [[ "$?" -ne 0 ]]; then
-      text=$('cat /root/katacoda-installation')
+      text=`cat /root/katacoda-installation`
       temp="${spinstr#?}"
       printf "%s [%c]  " "${text}" "${spinstr}"
       spinstr=${temp}${spinstr%"${temp}"}
