@@ -5,19 +5,18 @@
 
 show_progress()
 {
-  echo -n "Installing"
   local -r pid="${1}"
-  local -r delay='0.75'
+  local -r delay='1'
   local spinstr='\|/-'
   local temp
   while true; do 
     sudo grep -i "done" /root/katacoda-finished &> /dev/null
-    if [[ "$?" -ne 0 ]]; then     
+    if [[ "$?" -ne 0 ]]; then    
       temp="${spinstr#?}"
       printf " [%c]  " "${spinstr}"
       spinstr=${temp}${spinstr%"${temp}"}
       sleep "${delay}"
-      printf "\b\b\b\b\b\b"
+      printf "\b\b\b\b\b\b\r" 
     else
       break
     fi
