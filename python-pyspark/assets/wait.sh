@@ -23,7 +23,7 @@ show_progress()
       break
     fi
   done
-  printf "    \b\b\b\b"
+  printf "                      \b\b\b\b"
   echo ""
 }
 

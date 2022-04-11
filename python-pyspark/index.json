@@ -40,6 +40,7 @@
     "assets": {
        "host01": [
          {"file": "toy_dataset.csv", "target": "~/"},
+         {"file": "step4.py", "target": "~/"},
          {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
        ] 
     }
@@ -51,7 +52,7 @@
   },
   "files": [
     "step3.py",
-    "step4.py"
+    "~/step4.py"
   ],
   "backend": {
     "imageid": "python:3.8"
