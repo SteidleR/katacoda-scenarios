@@ -51,8 +51,7 @@
     "uisettings": "python"
   },
   "files": [
-    "step3.py",
-    "~/step4.py"
+    "step3.py"
   ],
   "backend": {
     "imageid": "python:3.8"
