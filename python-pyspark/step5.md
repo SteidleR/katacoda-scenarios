@@ -8,12 +8,7 @@ The PySpark DataFrame has a rich set of API which supports reading and writing m
 
 The dataset is saved as [toy_dataset.csv](toy_dataset.csv). To load the dataset from file, pyspark provides a function to read csv and return a _DataFrame_ object.
 
-<pre class="file" data-filename="step4.py" data-target="replace">
-import pyspark
-from pyspark.sql import SparkSession, Row
-
-spark = SparkSession.builder.getOrCreate()
-
+<pre class="file" data-filename="script.py" data-target="append">
 df  = spark.read.csv("toy_dataset.csv", header=True, inferSchema=True)
 
 df.printSchema()
@@ -23,7 +18,7 @@ df.printSchema()
 
 To have a look at the column names and to get a count of the number of rows of a DataFrame, pyspark provides following methods:
 
-<pre class="file" data-filename="step4.py" data-target="append">
+<pre class="file" data-filename="script.py" data-target="append">
 print("Column names:", df.columns)
 
 print("Number of rows:", df.count())
@@ -31,7 +26,7 @@ print("Number of rows:", df.count())
 
 The _describe_ method provides a summary of a particular column in a DataFrame. It returns the statistical summary of the column including count, mean and mininum and maximum values.
 
-<pre class="file" data-filename="step4.py" data-target="append">
+<pre class="file" data-filename="script.py" data-target="append">
 df.describe().show()
 
 df.describe("Income").show()

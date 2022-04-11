@@ -1,0 +1,1 @@
+echo "import pyspark\nfrom pyspark.sql import SparkSession, Row\nspark = SparkSession.builder.getOrCreate()" > /root/script.py

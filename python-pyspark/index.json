@@ -18,11 +18,13 @@
       },
       {
         "title": "PySpark and DataFrame",
-        "text": "step4.md"
+        "text": "step4.md",
+        "background": "reset_file.sh"
       },
       {
         "title": "PySpark with real-world data",
-        "text": "step5.md"
+        "text": "step5.md",
+        "background": "reset_file.sh"
       },
       {
         "title": "PySpark vs Python",
@@ -40,15 +42,15 @@
     "assets": {
        "host01": [
          {"file": "toy_dataset.csv", "target": "~/"},
-         {"file": "step4.py", "target": "~/"},
          {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
-       ] 
+        ] 
     }
   },
   "environment": {
     "uilayout": "editor-terminal",
     "uieditorpath": "/root",
-    "uisettings": "python"
+    "uisettings": "python",
+    "hideHiddenFiles"
   },
   "files": [
     "step3.py"
