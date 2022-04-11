@@ -1,61 +1,66 @@
 {
-  "title": "Spark and PySpark",
-  "description": "Learn how to use PySpark for data processing",
-  "difficulty": "Beginner",
-  "details": {
-    "steps": [
-      {
-        "title": "Apache Spark",
-        "text": "step1.md"
-      },
-      {
-        "title": "PySpark",
-        "text": "step2.md"
-      },
-      {
-        "title": "PySpark Usage",
-        "text": "step3.md"
-      },
-      {
-        "title": "PySpark and DataFrame",
-        "text": "step4.md",
-        "background": "reset_file.sh"
-      },
-      {
-        "title": "PySpark with real-world data",
-        "text": "step5.md",
-        "background": "reset_file.sh"
-      },
-      {
-        "title": "PySpark vs Python",
-        "text": "step6.md"
-      }
-    ],
-    "intro": {
-      "text": "intro.md",
-      "courseData": "background.sh",
-      "code": "foreground.sh"
-    },
-    "finish": {
-      "text": "finish.md"
-    },
-    "assets": {
-       "host01": [
-         {"file": "toy_dataset.csv", "target": "~/"},
-         {"file": "wait.sh", "target": "/usr/local/bin/", "chmod": "+x"}
-        ] 
-    }
-  },
-  "environment": {
-    "uilayout": "editor-terminal",
-    "uieditorpath": "/root",
-    "uisettings": "python",
-    "hideHiddenFiles"
-  },
-  "files": [
-    "step3.py"
-  ],
-  "backend": {
-    "imageid": "python:3.8"
-  }
+	"title": "Spark and PySpark",
+	"description": "Learn how to use PySpark for data processing",
+	"difficulty": "Beginner",
+	"details": {
+		"steps": [{
+				"title": "Apache Spark",
+				"text": "step1.md"
+			},
+			{
+				"title": "PySpark",
+				"text": "step2.md"
+			},
+			{
+				"title": "PySpark Usage",
+				"text": "step3.md"
+			},
+			{
+				"title": "PySpark and DataFrame",
+				"text": "step4.md",
+				"background": "reset_file.sh"
+			},
+			{
+				"title": "PySpark with real-world data",
+				"text": "step5.md",
+				"background": "reset_file.sh"
+			},
+			{
+				"title": "PySpark vs Python",
+				"text": "step6.md"
+			}
+		],
+		"intro": {
+			"text": "intro.md",
+			"courseData": "background.sh",
+			"code": "foreground.sh"
+		},
+		"finish": {
+			"text": "finish.md"
+		},
+		"assets": {
+			"host01": [{
+					"file": "toy_dataset.csv",
+					"target": "~/"
+				},
+				{
+					"file": "wait.sh",
+					"target": "/usr/local/bin/",
+					"chmod": "+x"
+				}
+			]
+		}
+	},
+	"environment": {
+		"uilayout": "editor-terminal",
+		"uieditorpath": "/root",
+		"uisettings": "python",
+		"hideHiddenFiles": true
+	},
+	"files": [
+		"step3.py"
+	],
+	"backend": {
+		"imageid": "python:3.8"
+	}
 }
