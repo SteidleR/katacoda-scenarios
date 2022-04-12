@@ -9,6 +9,10 @@ The PySpark DataFrame has a rich set of API which supports reading and writing m
 The dataset is saved as [toy_dataset.csv](toy_dataset.csv). To load the dataset from file, pyspark provides a function to read csv and return a _DataFrame_ object.
 
 <pre class="file" data-filename="script.py" data-target="append">
+import pyspark
+from pyspark.sql import SparkSession
+spark = SparkSession.builder.getOrCreate()
+
 df  = spark.read.csv("toy_dataset.csv", header=True, inferSchema=True)
 
 df.printSchema()
@@ -31,6 +35,22 @@ df.describe().show()
 
 df.describe("Income").show()
 </pre>
+
+# Data Transformation
+
+With the _DataFrame.filter_ we can filter the DataFrame by conditions.  To show all women with an income greater than 60.000 we filter the data by checking if the column _Income_ is greater than 60.000 and if the column _Gender_ is equal to "female".
+
+<pre class="file" data-filename="script.py" data-target="replace">
+import pyspark
+from pyspark.sql import SparkSession, Row
+spark = SparkSession.builder.getOrCreate()
+
+df  = spark.read.csv("toy_dataset.csv", header=True, inferSchema=True)
+
+from pyspark.sql import functions as F
+
+df1 =  df.filter((F.col("Income") >= 60000) & (F.col("Gender") == "Female")).show()
+<pre class="file" data-filename="script.py" data-target="append">
 
 ---
 

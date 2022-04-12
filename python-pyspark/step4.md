@@ -1,6 +1,14 @@
 Let's start using Spark for simple data processing. 
 
 As like in the previous step, we first need to create a new _SparkSession_.
+
+<pre class="file" data-filename="script.py" data-target="replace">
+import pyspark
+from pyspark.sql import SparkSession
+
+spark = SparkSession.builder.getOrCreate()
+</pre>
+
 We create a simple data set and create a DataFrame from it in pyspark.
 
 <pre class="file" data-filename="script.py" data-target="append">
