@@ -58,7 +58,7 @@
 		"hideHiddenFiles": true
 	},
 	"files": [
-		"step3.py"
+		"script.py"
 	],
 	"backend": {
 		"imageid": "python:3.8"

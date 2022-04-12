@@ -12,6 +12,8 @@ spark = SparkSession.builder.getOrCreate()
 We create a simple data set and create a DataFrame from it in pyspark.
 
 <pre class="file" data-filename="script.py" data-target="append">
+from pyspark.sql import Row
+
 data = (
   Row(1,"Joe",22),
   Row(2,"Mary",24),
