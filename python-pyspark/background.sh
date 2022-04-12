@@ -1,5 +1,4 @@
 apt install openjdk-8-jdk --assume-yes
-export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
 
 echo "Installing Hadoop" > /root/katacoda-installation
 
@@ -19,8 +18,5 @@ source ~/.bashrc
 echo "Installing PySpark" > /root/katacoda-installation
 
 python3 -m pip install pyspark
-
-export HADOOP_HOME=/root/hadoop
-export LD_LIBRARY_PATH=$HADOOP_HOME/lib/native
 
 echo "done" > /root/katacoda-installation

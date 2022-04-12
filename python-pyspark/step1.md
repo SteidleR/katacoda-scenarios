@@ -17,5 +17,5 @@ Now that you've learned in short what Apache Spark is, we will take a look at us
 
 ## Sources
 
-[1] Apache Spark. [Online]. Available: https://spark.apache.org \
+[1] Apache Spark. [Online]. Available: https://spark.apache.org <br />
 [2] PySpark - Introduction. [Online]. Available: https://www.tutorialspoint.com/pyspark/pyspark_introduction.htm 
