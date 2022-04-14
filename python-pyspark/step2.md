@@ -16,4 +16,33 @@ To test the installation, execute the following command in the terminal:
 
 This will open the PySpark shell in the terminal. If there isn't any error, everything went well and pyspark was installed successfully using pip.
 
-Stop the pyspark cli with <pre>`^D`{{execute ctrl-seq}}</pre>.
+Stop the pyspark cli with <pre>`^D`{{execute ctrl-seq}}</pre>
+
+## Get started with PySpark
+
+A PySpark application starts by initializing a _SparkSession_ from the _pyspark.sql_ library. This _SparkSession_ object is the entry point to all the Spark APIs [3].
+
+<pre class="file" data-filename="script.py" data-target="replace">
+import pyspark
+from pyspark.sql import SparkSession
+
+spark = SparkSession.builder.getOrCreate()
+</pre>
+
+To get the currently installed version of PySpark, use the _sparkContext.version_ attribute.
+
+<pre class="file" data-filename="script.py" data-target="append">
+print("Version: ", spark.sparkContext.version)
+</pre>
+
+Now, execute the script to view the result.
+
+`python script.py`{{execute}}
+
+You should now see the 'Version: _(Some Version number)_' in the terminal.
+
+---
+
+## Sources
+
+[3] Quickstart: DataFrame. [Online]. Available: https://spark.apache.org/docs/latest/api/python/getting_started/quickstart_df.html

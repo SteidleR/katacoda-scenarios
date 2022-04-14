@@ -12,18 +12,16 @@
 				"text": "step2.md"
 			},
 			{
-				"title": "PySpark Usage",
+				"title": "PySpark and DataFrame",
 				"text": "step3.md"
 			},
 			{
-				"title": "PySpark and DataFrame",
-				"text": "step4.md",
-				"background": "reset_file.sh"
+				"title": "PySpark Reading and Writing",
+				"text": "step4.md"
 			},
 			{
-				"title": "PySpark with real-world data",
-				"text": "step5.md",
-				"background": "reset_file.sh"
+				"title": "PySpark Data Transformation",
+				"text": "step5.md"
 			},
 			{
 				"title": "PySpark vs Python",

@@ -1,8 +1,6 @@
-Let's have a look at using PySpark within a python program.
+Let's start using Spark for simple data processing. 
 
-## Importing PySpark
-
-A PySpark application starts by initializing a _SparkSession_ from the _pyspark.sql_ library. This _SparkSession_ object is the entry point to all the Spark APIs [3].
+As like in the previous step, we first need to create a new _SparkSession_.
 
 <pre class="file" data-filename="script.py" data-target="replace">
 import pyspark
@@ -11,20 +9,25 @@ from pyspark.sql import SparkSession
 spark = SparkSession.builder.getOrCreate()
 </pre>
 
-To get the currently installed version of PySpark, use the _sparkContext.version_ attribute.
+We create a simple data set and create a DataFrame from it in pyspark.
 
 <pre class="file" data-filename="script.py" data-target="append">
-print("Version: ", spark.sparkContext.version)
+from pyspark.sql import Row
+
+data = (
+  Row(1,"Joe",22),
+  Row(2,"Mary",24),
+  Row(3,"Ahmed",44),
+  Row(4,"John",55)
+)
+
+data = spark.createDataFrame(data)
+
+data.show()  # print data
+
+data.printSchema() # print schema
 </pre>
 
-Now, execute the script to view the result.
+For printing the data stored in the DataFrame, we can use the function _data.show()_. The function _data.printSchema()_ will print the schema, which was inferred by PySpark.
 
 `python script.py`{{execute}}
-
-You should now see the 'Version: _(Some Version number)_' in the terminal.
-
----
-
-## Sources
-
-[3] Quickstart: DataFrame. [Online]. Available: https://spark.apache.org/docs/latest/api/python/getting_started/quickstart_df.html
