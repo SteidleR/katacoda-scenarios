@@ -30,13 +30,18 @@ The _describe_ method provides a summary of a particular column in a DataFrame. 
 To export the dataset to a Parquet file, pyspark provides simple methods to use.
 
 <pre class="file" data-filename="script.py" data-target="insert" data-marker="df.describe().show()">
-df.write.format(“parquet").mode("overwrite").save("outputPath")
+df.write.format("parquet").mode("overwrite").save("dataset")
 </pre>
 
-The same applies for CSV, JSON and all other file formats.
+Looking in the folder dataset, we can see the parquet files.
+
+`ls dataset`{{execute}}
+
+The same applies for CSV, JSON and all other data file formats.
 
 ---
 
 ## Sources
 
 [4] Spark with Python (PySpark) Tutorial For Beginners. [Online]. Available: https://sparkbyexamples.com/pyspark-tutorial/ <br />
+[5] Apache Spark Tutorial — How to Read and Write Data With PySpark. [Online]. Available: https://towardsdatascience.com/spark-essentials-how-to-read-and-write-data-with-pyspark-5c45e29227cd
