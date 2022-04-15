@@ -33,6 +33,8 @@ To export the dataset to a Parquet file, pyspark provides simple methods to use.
 df.write.format("parquet").mode("overwrite").save("dataset")
 </pre>
 
+`python script.py`{{execute}}
+
 Looking in the folder dataset, we can see the parquet files.
 
 `ls dataset`{{execute}}

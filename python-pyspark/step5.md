@@ -1,7 +1,5 @@
 Now, let's use pyspark for data filtering and transformation.
 
-# Filtering
-
 The PySpark SQL library is used for structured data processing and distributed SQL query. It allows to filter and transform the DataFrame by simple methods.
 With the _DataFrame.filter_ we can filter the DataFrame by conditions [6].  
 
@@ -15,19 +13,31 @@ df  = spark.read.csv("toy_dataset.csv", header=True, inferSchema=True)
 
 from pyspark.sql import functions as F
 
-f.filter((F.col("Income")>=70000) & F.col("Gender")=="Female")).show()
+df.filter((df.Income>=70000) & (df.Gender=="Female")).show()
 </pre>
 
 `python script.py`{{execute}}
 
-# Transformation
-
 Apache Spark and PySpark supports many different transformation methods and functions for data cleaning.
 
-To conditionally replace values, pyspark provides the _when_ function.
+To conditionally replace values, pyspark provides the _when_ function. With _orderBy_ we can simply order the data by column.  
 
-<pre class="file" data-filename="script.py" data-target="insert" data-marker='f.filter((F.col("Income")>=70000) & F.col("Gender")=="Female")).show()'>
-df.withColumn("NegativeIncome", when(df.Income < 0, True).otherwise(False)).show()
+<pre class="file" data-filename="script.py" data-target="insert" data-marker='df.filter((df.Income>=70000) & (df.Gender=="Female")).show()'>
+df.withColumn("Income", 
+              F.when(df.Income > 0, True) \
+                .otherwise(False).alias("NegativeIncome")
+              ).orderBy("Income").show()
+</pre>
+
+`python script.py`{{execute}}
+
+With _groupby_ and _sum_ we can check the income per city.
+
+<pre class="file" data-filename="script.py" data-target="insert" data-marker='df.withColumn("Income", 
+              F.when(df.Income > 0, True) \
+                .otherwise(False).alias("NegativeIncome")
+              ).orderBy("Income").show()'>
+df.select("City","Income").groupby("City").sum().show()
 </pre>
 
 `python script.py`{{execute}}
