@@ -42,6 +42,13 @@ df.select("City","Income").groupby("City").sum().show()
 
 `python script.py`{{execute}}
 
+Undesirable columns can be dropped from dataframe with
+
+<pre class="file" data-filename="script.py" data-target="insert" data-marker='df.select("City","Income").groupby("City").sum().show()'>
+df=df.drop(Illness)
+df.show()
+</pre>
+
 ---
 
 ## Sources
