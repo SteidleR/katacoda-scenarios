@@ -9,11 +9,11 @@ For this we will use the pyspark interactive shell.
 
 To show all women with an income greater than 70.000 we filter the data by checking if the column _Income_ is greater than 70.000 and if the column _Gender_ is equal to "female".
 
-`df  = spark.read.csv("toy_dataset.csv", header=True, inferSchema=True)
+`from pyspark.sql import functions as F
 
-from pyspark.sql import functions as F
+df  = spark.read.csv("toy_dataset.csv", header=True, inferSchema=True)
 
-df.filter((df.Income>=70000) & (df.Gender=="Female")).show()´{{execute}}
+df.filter((df.Income>=70000) & (df.Gender=="Female")).show()`{{execute}}
 
 Apache Spark and PySpark supports many different transformation methods and functions for data cleaning.
 
@@ -26,23 +26,12 @@ To conditionally replace values, pyspark provides the _when_ function. With _ord
 
 With _groupby_ and _sum_ we can check the income per city.
 
-<pre class="file" data-filename="script.py" data-target="insert" data-marker='df.withColumn("Income", 
-              F.when(df.Income > 0, True) \
-                .otherwise(False).alias("NegativeIncome")
-              ).orderBy("Income").show()'>
-df.select("City","Income").groupby("City").sum().show()
-</pre>
-
-`python script.py`{{execute}}
+`df.select("City","Income").groupby("City").sum().show()`{{execute}}
 
 Undesirable columns can be dropped from dataframe with
 
-<pre class="file" data-filename="script.py" data-target="insert" data-marker='df.select("City","Income").groupby("City").sum().show()'>
-df=df.drop("Illness")
-df.show()
-</pre>
-
-`python script.py`{{execute}}
+`df=df.drop("Illness")
+df.show()`{{execute}}
 
 ---
 
