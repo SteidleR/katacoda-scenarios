@@ -1,35 +1,28 @@
 Now, let's use pyspark for data filtering and transformation.
 
 The PySpark SQL library is used for structured data processing and distributed SQL query. It allows to filter and transform the DataFrame by simple methods.
-With the _DataFrame.filter_ we can filter the DataFrame by conditions [6].  
+With the _DataFrame.filter_ we can filter the DataFrame by conditions [6]. 
+
+For this we will use the pyspark interactive shell.
+
+`pyspark`{{execute}}
 
 To show all women with an income greater than 70.000 we filter the data by checking if the column _Income_ is greater than 70.000 and if the column _Gender_ is equal to "female".
 
-<pre class="file" data-filename="script.py" data-target="replace">
-import pyspark
-from pyspark.sql import SparkSession
-spark = SparkSession.builder.getOrCreate()
-df  = spark.read.csv("toy_dataset.csv", header=True, inferSchema=True)
+`df  = spark.read.csv("toy_dataset.csv", header=True, inferSchema=True)
 
 from pyspark.sql import functions as F
 
-df.filter((df.Income>=70000) & (df.Gender=="Female")).show()
-</pre>
-
-`python script.py`{{execute}}
+df.filter((df.Income>=70000) & (df.Gender=="Female")).show()´{{execute}}
 
 Apache Spark and PySpark supports many different transformation methods and functions for data cleaning.
 
 To conditionally replace values, pyspark provides the _when_ function. With _orderBy_ we can simply order the data by column.  
 
-<pre class="file" data-filename="script.py" data-target="insert" data-marker='df.filter((df.Income>=70000) & (df.Gender=="Female")).show()'>
-df.withColumn("Income", 
+`df.withColumn("Income", 
               F.when(df.Income > 0, True) \
                 .otherwise(False).alias("NegativeIncome")
-              ).orderBy("Income").show()
-</pre>
-
-`python script.py`{{execute}}
+              ).orderBy("Income").show()`{{execute}}
 
 With _groupby_ and _sum_ we can check the income per city.
 
@@ -45,9 +38,11 @@ df.select("City","Income").groupby("City").sum().show()
 Undesirable columns can be dropped from dataframe with
 
 <pre class="file" data-filename="script.py" data-target="insert" data-marker='df.select("City","Income").groupby("City").sum().show()'>
-df=df.drop(Illness)
+df=df.drop("Illness")
 df.show()
 </pre>
+
+`python script.py`{{execute}}
 
 ---
 

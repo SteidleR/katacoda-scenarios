@@ -14,7 +14,7 @@ To test the installation, execute the following command in the terminal:
 
 `pyspark`{{execute}}
 
-This will open the PySpark shell in the terminal. If there isn't any error, everything went well and pyspark was installed successfully using pip.
+This will open the PySpark shell in the terminal. If there isn't any error, everything went well and pyspark was installed successfully using pip. The pyspark shell is a interactive python shell with predefined spark session variables.
 
 Stop the pyspark cli with `exit()`{{execute}}
 

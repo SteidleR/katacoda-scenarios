@@ -1,7 +1,7 @@
 {
 	"title": "Spark and PySpark",
 	"description": "Learn how to use PySpark for data processing",
-	"difficulty": "Beginner",
+	"difficulty": "Intermediate",
 	"details": {
 		"steps": [{
 				"title": "Apache Spark",
@@ -24,7 +24,7 @@
 				"text": "step5.md"
 			},
 			{
-				"title": "PySpark vs Python",
+				"title": "PySpark vs Pandas",
 				"text": "step6.md"
 			}
 		],
