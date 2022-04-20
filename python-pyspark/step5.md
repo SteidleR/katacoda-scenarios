@@ -7,12 +7,13 @@ For this we will use the pyspark interactive shell.
 
 `pyspark`{{execute}}
 
+Later the pyspark sql functions will be needed, so let's first import them.
+
+`from pyspark.sql import functions as F`{{execute}}
+
 To show all women with an income greater than 70.000 we filter the data by checking if the column _Income_ is greater than 70.000 and if the column _Gender_ is equal to "female".
 
-`from pyspark.sql import functions as F
-
-df  = spark.read.csv("toy_dataset.csv", header=True, inferSchema=True)
-
+`df  = spark.read.csv("toy_dataset.csv", header=True, inferSchema=True)
 df.filter((df.Income>=70000) & (df.Gender=="Female")).show()`{{execute}}
 
 Apache Spark and PySpark supports many different transformation methods and functions for data cleaning.
