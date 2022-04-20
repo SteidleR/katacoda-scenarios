@@ -1,6 +1,6 @@
 The next step is to use pyspark for reading and writing data. Therefore we use a dataset (See [toy-dataset](https://www.kaggle.com/datasets/carlolepelaars/toy-dataset)) from [kaggle](https://www.kaggle.com) in csv format. 
 
-The PySpark DataFrame has a rich set of API which supports reading and writing many different file formats, including but not limited to [4]:
+The PySpark DataFrame has a rich set of API which supports reading and writing many different file formats, including but not limited to [5]:
  - csv
  - text
  - Parquet
@@ -45,5 +45,5 @@ The same applies for CSV, JSON and all other data file formats.
 
 ## Sources
 
-[4] Spark with Python (PySpark) Tutorial For Beginners. [Online]. Available: https://sparkbyexamples.com/pyspark-tutorial/ <br />
-[5] Apache Spark Tutorial — How to Read and Write Data With PySpark. [Online]. Available: https://towardsdatascience.com/spark-essentials-how-to-read-and-write-data-with-pyspark-5c45e29227cd
+[5] Spark with Python (PySpark) Tutorial For Beginners. [Online]. Available: https://sparkbyexamples.com/pyspark-tutorial/ <br />
+[6] Apache Spark Tutorial — How to Read and Write Data With PySpark. [Online]. Available: https://towardsdatascience.com/spark-essentials-how-to-read-and-write-data-with-pyspark-5c45e29227cd

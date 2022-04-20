@@ -9,7 +9,7 @@ from pyspark.sql import SparkSession
 spark = SparkSession.builder.getOrCreate()
 </pre>
 
-We create a simple data set and create a DataFrame from it in pyspark.
+We define a simple data set and create a DataFrame from it in pyspark.
 
 <pre class="file" data-filename="script.py" data-target="append">
 from pyspark.sql import Row

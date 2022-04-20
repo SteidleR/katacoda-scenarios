@@ -20,7 +20,8 @@ Stop the pyspark cli with `exit()`{{execute}}
 
 ## Get started with PySpark
 
-A PySpark application starts by initializing a _SparkSession_ from the _pyspark.sql_ library. This _SparkSession_ object is the entry point to all the Spark APIs [3].
+A PySpark application starts by initializing a _SparkSession_ from the _pyspark.sql_ library. This _SparkSession_ object is the entry point to all the Spark APIs [4]. <br />
+The PySpark SQL library establishes a connection between the distributed dataset and the relational table and provides integration between relational and procedural processing.
 
 <pre class="file" data-filename="script.py" data-target="replace">
 import pyspark
@@ -45,4 +46,4 @@ You should now see the 'Version: _(Some Version number)_' in the terminal.
 
 ## Sources
 
-[3] Quickstart: DataFrame. [Online]. Available: https://spark.apache.org/docs/latest/api/python/getting_started/quickstart_df.html
+[4] Quickstart: DataFrame. [Online]. Available: https://spark.apache.org/docs/latest/api/python/getting_started/quickstart_df.html
