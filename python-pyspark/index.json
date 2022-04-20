@@ -17,7 +17,8 @@
 			},
 			{
 				"title": "PySpark Reading and Writing",
-				"text": "step4.md"
+				"text": "step4.md",
+				"verify": "step4-verify.sh"
 			},
 			{
 				"title": "PySpark Data Transformation",
