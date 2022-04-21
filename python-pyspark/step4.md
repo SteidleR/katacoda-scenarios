@@ -1,6 +1,6 @@
 The next step is to use pyspark for reading and writing data. Therefore we use a dataset (See [toy-dataset](https://www.kaggle.com/datasets/carlolepelaars/toy-dataset)) from [kaggle](https://www.kaggle.com) in csv format. 
 
-The PySpark DataFrame has a rich set of API which supports reading and writing many different file formats, including but not limited to [5]:
+The PySpark DataFrame has a rich set of APIs which supports reading and writing many different file formats, including but not limited to [5]:
  - csv
  - text
  - Parquet
@@ -16,7 +16,7 @@ import pyspark
 from pyspark.sql import SparkSession
 spark = SparkSession.builder.getOrCreate()
 
-df  = spark.read.csv("toy_dataset.csv", header=True, inferSchema=True)
+df = spark.read.csv("toy_dataset.csv", header=True, inferSchema=True)
 
 df.describe().show()
 </pre>
@@ -39,7 +39,7 @@ Looking in the folder dataset, we can see the parquet files.
 
 `ls dataset`{{execute}}
 
-The same applies for CSV, JSON and all other data file formats.
+The same applies for CSV, JSON and all other data file formats. Simply change the parameter of the _DataFrame.write.format_ method to the destination format.
 
 ---
 

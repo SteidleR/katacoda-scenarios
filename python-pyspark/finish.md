@@ -1,4 +1,4 @@
-Congrats! You've finished the katacoda "pyspark".
+Congrats! You've finished the katacoda "Spark and PySpark".
 
 Throughout this katacoda scenario, you learned what Apache Spark is and how you can use pyspark with datasets. You got a little insight into the possibilities of pyspark for data processing. You learned at how to load a dataset from a file, how you can analyse the data and how to transform data stored in a pyspark DataFrame.
 

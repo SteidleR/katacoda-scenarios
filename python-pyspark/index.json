@@ -26,7 +26,8 @@
 			},
 			{
 				"title": "PySpark vs Pandas",
-				"text": "step6.md"
+				"text": "step6.md",
+				"courseData": "generate_dataset.sh"
 			}
 		],
 		"intro": {

@@ -12,13 +12,19 @@ Later the pyspark sql functions will be needed, so let's first import them.
 
 Let's load the dataset we saved as parquet from the last step.
 
-`df  = spark.read.parquet("dataset", header=True, inferSchema=True)`{{execute}}
+`df = spark.read.parquet("dataset", header=True, inferSchema=True)`{{execute}}
 
 # Filtering
 
 With the _DataFrame.filter_ we can filter the DataFrame by conditions. To show all women with an income greater than 70.000 we filter the data by checking if the column _Income_ is greater than 70.000 and if the column _Gender_ is equal to "female".
 
 `df.filter((df.Income>=70000) & (df.Gender=="Female")).show()`{{execute}}
+
+We can also filter by passing a SQL statement as string to the function.
+
+`df.filter("Gender == 'Female'").show()`{{execute}}
+
+Those are just two small examples of filtering by conditions. PySpark provides much more than that but that's too much to show all of it.
 
 # Transforming
 
