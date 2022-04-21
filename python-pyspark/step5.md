@@ -40,6 +40,24 @@ Undesirable columns can be dropped from dataframe with
 `df=df.drop("Illness")
 df.show()`{{execute}}
 
+# SQL
+
+PySpark also supports using plain SQL queries. Therefore we first need to create a temporary view from the dataframe with
+
+`df.createOrReplaceTempView("Persons")`{{execute}}
+
+Then we can use _spark.sql_ to execute the SQL statements.
+
+`spark.sql("SELECT * FROM Persons WHERE City LIKE 'Dallas'").show()`{{execute}}
+
+---
+
+Let's exit the pyspark shell:
+
+`exit()`{{execute}}
+
+And then continue with the last step in this scenario.
+
 ---
 
 ## Sources

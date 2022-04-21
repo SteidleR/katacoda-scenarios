@@ -1,4 +1,4 @@
-In this step you will learn why you should use pyspark instead of pandas.
+In this step you will learn why you should use pyspark instead of pandas for big data.
 
 Pandas is one of the most popular frameworks for data analysis because it's fast, powerful, flexible and easy to use.  It also supports loading data in a so called DataFrame like pyspark.
 
