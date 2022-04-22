@@ -1,6 +1,11 @@
-Congrats! You've finished the katacoda "Spark and PySpark".
+Congratulation! You've finished the katacoda "Spark and PySpark".
 
-Throughout this katacoda scenario, you learned what Apache Spark is and how you can use pyspark with datasets. You got a little insight into the possibilities of pyspark for data processing. You learned at how to load a dataset from a file, how you can analyse the data and how to transform data stored in a pyspark DataFrame.
+Let's recap what you learned in the last 10-15 minutes:
+
+Throughout this katacoda scenario, you learned what Apache Spark is. You learned the benefits of Spark and its use cases in the big data and data warehouse area. <br /> 
+Starting, you learned how a PySpark application is build and what a _SparkSession_ is. <br /> 
+You got an insight into the possibilities of PySpark for data processing. Furthermore, You learned how to load a dataset from a file, how you can analyze and filter the data and how to transform data stored in a PySpark DataFrame.<br /> 
+Last, you got an overview of the differences between PySpark and Pandas and how to use both frameworks together by converting the DataFrames between them.
 
 Below you can find a list of all sources and references used in this scenario.
 

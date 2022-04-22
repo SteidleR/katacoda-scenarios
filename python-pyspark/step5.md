@@ -10,7 +10,7 @@ Later the pyspark sql functions will be needed, so let's first import them.
 
 `from pyspark.sql import functions as F`{{execute}}
 
-Let's load the dataset we saved as parquet from the last step.
+Let's load the dataset we saved in parquet format from the last step.
 
 `df = spark.read.parquet("dataset", header=True, inferSchema=True)`{{execute}}
 

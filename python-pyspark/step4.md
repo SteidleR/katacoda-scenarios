@@ -17,11 +17,21 @@ from pyspark.sql import SparkSession
 spark = SparkSession.builder.getOrCreate()
 
 df = spark.read.csv("toy_dataset.csv", header=True, inferSchema=True)
-
-df.describe().show()
 </pre>
 
+With _.show()_ we can display the top rows. It takes a integer as parameter which gives the number of rows to display. Similarly, the _.take()_ function will return the given number of rows from top as a list of the _Row_ objects.
+
+<pre class="file" data-filename="script.py" data-target="append">
+df.show(3)
+</pre>
+
+`python script.py`{{execute}}
+
 The _describe_ method provides a summary of a particular column in a DataFrame. It returns the statistical summary of the column including count, mean and mininum and maximum values.
+
+<pre class="file" data-filename="script.py" data-target="insert" data-marker="df.show(3)">
+df.describe().show()
+</pre>
 
 `python script.py`{{execute}}
 

@@ -1,1 +1,0 @@
-for ((i=1;i<=500000;i++)) ; do echo -e "5,Dallas,Male,46,50289.0,No" >> toy_dataset_500k.csv ;  done
